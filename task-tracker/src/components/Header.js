@@ -1,16 +1,20 @@
-function Header(props) {
+import Proptypes from "prop-types";
+
+function Header({ title }) {
   return (
     <div>
-      <h1>{props.title || "Task Tracker"}</h1>
-      <h2>Tasks:</h2>
-      <ul>
-        <li>Study</li>
-        <li>Play</li>
-        <li>Work</li>
-      </ul>
-      <h2>Done:</h2>
+      <h1>{title}</h1>
+      <button>Click</button>
     </div>
   );
 }
+
+Header.defaultProps = {
+  title: "Task Trackerr",
+};
+
+Header.propTypes = {
+  title: Proptypes.string.isRequired,
+};
 
 export default Header;
