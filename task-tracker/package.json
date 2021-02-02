@@ -2,7 +2,7 @@
   "name": "task-tracker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://[your-user-name].github.io/tasktracker/",
+  "homepage": "https://github.com/ColbyWTaylor/tasktracker",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && del -rf docs && mv build docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

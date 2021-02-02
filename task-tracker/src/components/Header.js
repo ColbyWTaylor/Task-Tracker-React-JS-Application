@@ -4,7 +4,7 @@ function Header({ title }) {
   return (
     <div>
       <h1>{title}</h1>
-      <button>Click</button>
+      <button onClick={(e) => console.log("hello")}>Click</button>
     </div>
   );
 }
