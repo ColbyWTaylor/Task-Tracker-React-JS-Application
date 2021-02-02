@@ -2,7 +2,7 @@
   "name": "task-tracker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/ColbyWTaylor/tasktracker",
+  "homepage": "https://ColbyWTaylor.github.io/tasktracker",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
