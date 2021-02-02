@@ -10,13 +10,13 @@ function App() {
   ]);
 
   const deleteTask = (id) => {
-    console.log("delete bruh");
+    console.log("delete", id);
   };
 
   return (
     <div className="container">
       <Header />
-      <Tasks tasks={tasks} />
+      <Tasks tasks={tasks} onDelete={deleteTask} />
     </div>
   );
 }
