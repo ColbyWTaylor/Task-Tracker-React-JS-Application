@@ -6,7 +6,10 @@ function Task({ task, onDelete }) {
   };
 
   return (
-    <div className="task">
+    <div
+      className={`task ${task.reminder ? "reminder" : ""}`}
+      onDoubleClick={() => onToggle(task.id)}
+    >
       <h2>
         {task.text}{" "}
         <FaTimes
