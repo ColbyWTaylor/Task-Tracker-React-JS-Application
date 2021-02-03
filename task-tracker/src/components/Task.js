@@ -1,6 +1,6 @@
 import { FaTimes } from "react-icons/fa";
 
-function Task({ task, onDelete }) {
+function Task({ task, onDelete, onToggle }) {
   const clickDelete = () => {
     console.log("delete me clicked");
   };
