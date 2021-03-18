@@ -6,9 +6,9 @@ import AddTask from "./components/AddTask";
 
 function App() {
   const [tasks, setTasks] = useState([
-    { id: 1, text: "lots of hugs", day: "February 14", reminder: false },
-    { id: 2, text: "run around", day: "March 15", reminder: false },
-    { id: 3, text: "sleep in", day: "April 21", reminder: true },
+    { id: 1, text: "Workout", day: "April 1", reminder: false },
+    { id: 2, text: "Refactor react projects", day: "April 2", reminder: false },
+    { id: 3, text: "Skydiving", day: "April 21", reminder: true },
   ]);
 
   const [showAddTask, setShowAddTask] = useState(false);
@@ -45,6 +45,8 @@ function App() {
       ) : (
         "No tasks"
       )}
+
+      <p>Left green line indicates reminder- Double click left side to set change.</p>
     </div>
   );
 }
